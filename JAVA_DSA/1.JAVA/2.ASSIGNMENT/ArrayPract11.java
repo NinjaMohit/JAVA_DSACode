@@ -1,0 +1,30 @@
+///Find the maximu element in the array
+//Ip=12504
+//op=5
+
+import java.io.*;
+public class ArrayPract11 {
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println("Enter n Integer array Size");
+        int size = Integer.parseInt(br.readLine());
+        int arr[] = new int[size];
+
+        System.out.println("Enter array Element");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = Integer.parseInt(br.readLine());
+        }
+        int max = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        System.out.println("Maximum element" + max);
+    }
+}
+
+
+
